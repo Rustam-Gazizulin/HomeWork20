@@ -2,8 +2,8 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from demostration_solution.dao.director import DirectorDAO
-from demostration_solution.dao.model.director import Director
+from dao.director import DirectorDAO
+from dao.model.director import Director
 
 
 @pytest.fixture()
@@ -16,7 +16,7 @@ def director_dao():
 
     director_dao.get_one = MagicMock(return_value=d1)
     director_dao.get_all = MagicMock(return_value=[d1, d2])
-    director_dao.create = MagicMock(d3)
+    director_dao.create = MagicMock(return_value=d3)
     director_dao.delete = MagicMock()
     director_dao.update = MagicMock()
 

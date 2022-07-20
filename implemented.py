@@ -2,7 +2,7 @@ from dao.movie import MovieDAO
 from dao.director import DirectorDAO
 from dao.genre import GenreDAO
 from service.movie import MovieService
-from service.genre import GenreService
+from service import GenreService
 from service.director import DirectorService
 from setup_db import db
 
