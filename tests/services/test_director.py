@@ -9,7 +9,7 @@ class TestDirectorService:
         self.director_service = DirectorService(dao=director_dao)
 
     def test_get_one(self):
-        director = self.director_service.get_one()
+        director = self.director_service.get_one(1)
         assert director is not None
 
 
